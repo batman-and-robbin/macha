@@ -3021,3 +3021,21 @@ Google map
   text-decoration: none;
   cursor: pointer;
 }
+
+
+#copyMessage {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000; /* 초록색 배경 */
+  opacity:0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 9999;
+
+  /* 트랜지션 적용 */
+  transition: opacity 0.5s ease-in-out;
+}

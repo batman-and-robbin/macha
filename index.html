@@ -55,7 +55,9 @@
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+
     <main>
+      <div id="copyMessage">복사되었습니다!</div>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
@@ -86,7 +88,7 @@
           </div>
         </div>
       </nav>
-      <section class="home-section bg-dark-60 portfolio-page-header parallax-bg" id="home" data-background="assets/images/macha/normal/44-PhotoRoom.png">
+      <section class="home-section bg-dark-60 portfolio-page-header parallax-bg" id="home" data-background="assets/images/macha/normal/8-PhotoRoom.png">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
@@ -100,21 +102,24 @@
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3 text-center">
                 <h4 class="font-alt mb-20">Let's work together</h4>
-                <a href="tel:+123456789" id="contactBtn">
+                <a href="tel:+01062659628" id="contactBtn">
                   <div>상담문의</div>
                   <i class="fas fa-phone"></i>
                   <span>010 6265 9628</span>
                 </a>
               </div>
+              <div class="col-sm-6 col-sm-offset-3 text-center">
+                <div class="">
+                  <span>우리은행</span>
+                  <span>/ <span id="accountNumber">1002 440 597310</span>  <i class="far fa-copy" id="copyIcon" style="cursor:pointer;margin-left:5px;"></i></span><br>
+                  <span>예금주 : 고근옥</span>
+                  <span>/ <span id="email"> hdmacha@naver.com</span>  <i class="far fa-copy" id="copyIcon2" style="cursor:pointer;margin-left:5px;"></i></span>
+                  <textarea id="tempTextArea" style="display: none;"></textarea>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- 모달 창 -->
-          <div id="contactModal" class="modal col-sm-6 text-center">
-            <div class="modal-content">
-                <span class="close" onclick="hideContactModal()">&times;</span>
-                <p>전화번호: <a href="tel:+01062659628">010-6265-9628</a></p>
-            </div>
-          </div>
+          
         </div>
         </section>
         <section class="module" id="portfolio">
@@ -143,6 +148,69 @@
                 </li>
               <li class="work-item normal">
                 <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/2-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-2</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/3-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-3</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/4-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-4</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/5-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-5</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/6-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-6</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/7-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-7</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
+                  <div class="work-image"><img src="assets/images/macha/normal/8-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">A-8</h3>
+                    <div class="work-descr">normal</div>
+                  </div>
+                </span>
+                </li>
+              <li class="work-item normal">
+                <span>
                   <div class="work-image"><img src="assets/images/macha/normal/9-PhotoRoom.png" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
                     <h3 class="work-title">A-9</h3>
@@ -152,72 +220,9 @@
                 </li>
               <li class="work-item normal">
                 <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/23-PhotoRoom.png" alt="Portfolio Item"/></div>
+                  <div class="work-image"><img src="assets/images/macha/normal/10-PhotoRoom.png" alt="Portfolio Item"/></div>
                   <div class="work-caption font-alt">
-                    <h3 class="work-title">A-23</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/25-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-25</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/27-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-27</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/38-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-38</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/42-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-42</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/44-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-44</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/45-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-45</h3>
-                    <div class="work-descr">normal</div>
-                  </div>
-                </span>
-                </li>
-              <li class="work-item normal">
-                <span>
-                  <div class="work-image"><img src="assets/images/macha/normal/49-PhotoRoom.png" alt="Portfolio Item"/></div>
-                  <div class="work-caption font-alt">
-                    <h3 class="work-title">A-49</h3>
+                    <h3 class="work-title">A-10</h3>
                     <div class="work-descr">normal</div>
                   </div>
                 </span>
@@ -228,6 +233,51 @@
                     <div class="work-image"><img src="assets/images/macha/interior/1-PhotoRoom.png" alt="Portfolio Item"/></div>
                     <div class="work-caption font-alt">
                       <h3 class="work-title">B-1</h3>
+                      <div class="work-descr">interior</div>
+                    </div>
+                  </span>
+                  </li>
+                <li class="work-item interior">
+                  <span>
+                    <div class="work-image"><img src="assets/images/macha/interior/2-PhotoRoom.png" alt="Portfolio Item"/></div>
+                    <div class="work-caption font-alt">
+                      <h3 class="work-title">B-2</h3>
+                      <div class="work-descr">interior</div>
+                    </div>
+                  </span>
+                  </li>
+                <li class="work-item interior">
+                  <span>
+                    <div class="work-image"><img src="assets/images/macha/interior/3-PhotoRoom.png" alt="Portfolio Item"/></div>
+                    <div class="work-caption font-alt">
+                      <h3 class="work-title">B-3</h3>
+                      <div class="work-descr">interior</div>
+                    </div>
+                  </span>
+                  </li>
+                <li class="work-item interior">
+                  <span>
+                    <div class="work-image"><img src="assets/images/macha/interior/4-PhotoRoom.png" alt="Portfolio Item"/></div>
+                    <div class="work-caption font-alt">
+                      <h3 class="work-title">B-4</h3>
+                      <div class="work-descr">interior</div>
+                    </div>
+                  </span>
+                  </li>
+                <li class="work-item interior">
+                  <span>
+                    <div class="work-image"><img src="assets/images/macha/interior/5-PhotoRoom.png" alt="Portfolio Item"/></div>
+                    <div class="work-caption font-alt">
+                      <h3 class="work-title">B-5</h3>
+                      <div class="work-descr">interior</div>
+                    </div>
+                  </span>
+                  </li>
+                <li class="work-item interior">
+                  <span>
+                    <div class="work-image"><img src="assets/images/macha/interior/6-PhotoRoom.png" alt="Portfolio Item"/></div>
+                    <div class="work-caption font-alt">
+                      <h3 class="work-title">B-6</h3>
                       <div class="work-descr">interior</div>
                     </div>
                   </span>
@@ -268,53 +318,26 @@
                     </div>
                   </span>
                   </li>
-                <li class="work-item interior">
-                  <span>
-                    <div class="work-image"><img src="assets/images/macha/interior/20-PhotoRoom.png" alt="Portfolio Item"/></div>
-                    <div class="work-caption font-alt">
-                      <h3 class="work-title">B-20</h3>
-                      <div class="work-descr">interior</div>
-                    </div>
-                  </span>
-                  </li>
-                <li class="work-item interior">
-                  <span>
-                    <div class="work-image"><img src="assets/images/macha/interior/21-PhotoRoom.png" alt="Portfolio Item"/></div>
-                    <div class="work-caption font-alt">
-                      <h3 class="work-title">B-21</h3>
-                      <div class="work-descr">interior</div>
-                    </div>
-                  </span>
-                  </li>
-                <li class="work-item interior">
-                  <span>
-                    <div class="work-image"><img src="assets/images/macha/interior/23-PhotoRoom.png" alt="Portfolio Item"/></div>
-                    <div class="work-caption font-alt">
-                      <h3 class="work-title">B-23</h3>
-                      <div class="work-descr">interior</div>
-                    </div>
-                  </span>
-                  </li>
-                <li class="work-item interior">
-                  <span>
-                    <div class="work-image"><img src="assets/images/macha/interior/24-PhotoRoom.png" alt="Portfolio Item"/></div>
-                    <div class="work-caption font-alt">
-                      <h3 class="work-title">B-24</h3>
-                      <div class="work-descr">interior</div>
-                    </div>
-                  </span>
-                  </li>
-                <li class="work-item interior">
-                  <span>
-                    <div class="work-image"><img src="assets/images/macha/interior/27-PhotoRoom.png" alt="Portfolio Item"/></div>
-                    <div class="work-caption font-alt">
-                      <h3 class="work-title">B-27</h3>
-                      <div class="work-descr">interior</div>
-                    </div>
-                  </span>
-                  </li>
                 
                 
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/1-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-1</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/2-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-2</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
                   <li class="work-item booth">
                     <span>
                       <div class="work-image"><img src="assets/images/macha/booth/3-PhotoRoom.png" alt="Portfolio Item"/></div>
@@ -326,81 +349,63 @@
                     </li>
                   <li class="work-item booth">
                     <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/4-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-4</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/5-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-5</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/6-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-6</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/7-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-7</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/8-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-8</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
+                      <div class="work-image"><img src="assets/images/macha/booth/9-PhotoRoom.png" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">C-9</h3>
+                        <div class="work-descr">booth</div>
+                      </div>
+                    </span>
+                    </li>
+                  <li class="work-item booth">
+                    <span>
                       <div class="work-image"><img src="assets/images/macha/booth/10-PhotoRoom.png" alt="Portfolio Item"/></div>
                       <div class="work-caption font-alt">
                         <h3 class="work-title">C-10</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/14-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-14</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/20-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-20</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/30-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-30</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/41-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-41</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/52-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-52</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/60-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-60</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/66-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-66</h3>
-                        <div class="work-descr">booth</div>
-                      </div>
-                    </span>
-                    </li>
-                  <li class="work-item booth">
-                    <span>
-                      <div class="work-image"><img src="assets/images/macha/booth/71-PhotoRoom.png" alt="Portfolio Item"/></div>
-                      <div class="work-caption font-alt">
-                        <h3 class="work-title">C-71</h3>
                         <div class="work-descr">booth</div>
                       </div>
                     </span>
@@ -418,9 +423,45 @@
                       </li>
                     <li class="work-item car">
                       <span>
+                        <div class="work-image"><img src="assets/images/macha/car/2-PhotoRoom.png" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">D-2</h3>
+                          <div class="work-descr">car</div>
+                        </div>
+                      </span>
+                      </li>
+                    <li class="work-item car">
+                      <span>
+                        <div class="work-image"><img src="assets/images/macha/car/3-PhotoRoom.png" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">D-3</h3>
+                          <div class="work-descr">car</div>
+                        </div>
+                      </span>
+                      </li>
+                    <li class="work-item car">
+                      <span>
                         <div class="work-image"><img src="assets/images/macha/car/4-PhotoRoom.png" alt="Portfolio Item"/></div>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">D-4</h3>
+                          <div class="work-descr">car</div>
+                        </div>
+                      </span>
+                      </li>
+                    <li class="work-item car">
+                      <span>
+                        <div class="work-image"><img src="assets/images/macha/car/5-PhotoRoom.png" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">D-5</h3>
+                          <div class="work-descr">car</div>
+                        </div>
+                      </span>
+                      </li>
+                    <li class="work-item car">
+                      <span>
+                        <div class="work-image"><img src="assets/images/macha/car/6-PhotoRoom.png" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">D-6</h3>
                           <div class="work-descr">car</div>
                         </div>
                       </span>
@@ -436,63 +477,27 @@
                       </li>
                     <li class="work-item car">
                       <span>
+                        <div class="work-image"><img src="assets/images/macha/car/8-PhotoRoom.png" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">D-8</h3>
+                          <div class="work-descr">car</div>
+                        </div>
+                      </span>
+                      </li>
+                    <li class="work-item car">
+                      <span>
+                        <div class="work-image"><img src="assets/images/macha/car/9-PhotoRoom.png" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">D-9</h3>
+                          <div class="work-descr">car</div>
+                        </div>
+                      </span>
+                      </li>
+                    <li class="work-item car">
+                      <span>
                         <div class="work-image"><img src="assets/images/macha/car/10-PhotoRoom.png" alt="Portfolio Item"/></div>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">D-10</h3>
-                          <div class="work-descr">car</div>
-                        </div>
-                      </span>
-                      </li>
-                    <li class="work-item car">
-                      <span>
-                        <div class="work-image"><img src="assets/images/macha/car/11-PhotoRoom.png" alt="Portfolio Item"/></div>
-                        <div class="work-caption font-alt">
-                          <h3 class="work-title">D-11</h3>
-                          <div class="work-descr">car</div>
-                        </div>
-                      </span>
-                      </li>
-                    <li class="work-item car">
-                      <span>
-                        <div class="work-image"><img src="assets/images/macha/car/15-PhotoRoom.png" alt="Portfolio Item"/></div>
-                        <div class="work-caption font-alt">
-                          <h3 class="work-title">D-15</h3>
-                          <div class="work-descr">car</div>
-                        </div>
-                      </span>
-                      </li>
-                    <li class="work-item car">
-                      <span>
-                        <div class="work-image"><img src="assets/images/macha/car/21-PhotoRoom.png" alt="Portfolio Item"/></div>
-                        <div class="work-caption font-alt">
-                          <h3 class="work-title">D-21</h3>
-                          <div class="work-descr">car</div>
-                        </div>
-                      </span>
-                      </li>
-                    <li class="work-item car">
-                      <span>
-                        <div class="work-image"><img src="assets/images/macha/car/22-PhotoRoom.png" alt="Portfolio Item"/></div>
-                        <div class="work-caption font-alt">
-                          <h3 class="work-title">D-22</h3>
-                          <div class="work-descr">car</div>
-                        </div>
-                      </span>
-                      </li>
-                    <li class="work-item car">
-                      <span>
-                        <div class="work-image"><img src="assets/images/macha/car/25-PhotoRoom.png" alt="Portfolio Item"/></div>
-                        <div class="work-caption font-alt">
-                          <h3 class="work-title">D-25</h3>
-                          <div class="work-descr">car</div>
-                        </div>
-                      </span>
-                      </li>
-                    <li class="work-item car">
-                      <span>
-                        <div class="work-image"><img src="assets/images/macha/car/27-PhotoRoom.png" alt="Portfolio Item"/></div>
-                        <div class="work-caption font-alt">
-                          <h3 class="work-title">D-27</h3>
                           <div class="work-descr">car</div>
                         </div>
                       </span>
@@ -505,6 +510,33 @@
                           <div class="work-image"><img src="assets/images/macha/shop/1-PhotoRoom.png" alt="Portfolio Item"/></div>
                           <div class="work-caption font-alt">
                             <h3 class="work-title">E-1</h3>
+                            <div class="work-descr">shop</div>
+                          </div>
+                        </span>
+                        </li>
+                      <li class="work-item shop">
+                        <span>
+                          <div class="work-image"><img src="assets/images/macha/shop/2-PhotoRoom.png" alt="Portfolio Item"/></div>
+                          <div class="work-caption font-alt">
+                            <h3 class="work-title">E-2</h3>
+                            <div class="work-descr">shop</div>
+                          </div>
+                        </span>
+                        </li>
+                      <li class="work-item shop">
+                        <span>
+                          <div class="work-image"><img src="assets/images/macha/shop/3-PhotoRoom.png" alt="Portfolio Item"/></div>
+                          <div class="work-caption font-alt">
+                            <h3 class="work-title">E-3</h3>
+                            <div class="work-descr">shop</div>
+                          </div>
+                        </span>
+                        </li>
+                      <li class="work-item shop">
+                        <span>
+                          <div class="work-image"><img src="assets/images/macha/shop/4-PhotoRoom.png" alt="Portfolio Item"/></div>
+                          <div class="work-caption font-alt">
+                            <h3 class="work-title">E-4</h3>
                             <div class="work-descr">shop</div>
                           </div>
                         </span>
@@ -538,54 +570,27 @@
                         </li>
                       <li class="work-item shop">
                         <span>
-                          <div class="work-image"><img src="assets/images/macha/shop/15-PhotoRoom.png" alt="Portfolio Item"/></div>
+                          <div class="work-image"><img src="assets/images/macha/shop/8-PhotoRoom.png" alt="Portfolio Item"/></div>
                           <div class="work-caption font-alt">
-                            <h3 class="work-title">E-15</h3>
+                            <h3 class="work-title">E-8</h3>
                             <div class="work-descr">shop</div>
                           </div>
                         </span>
                         </li>
                       <li class="work-item shop">
                         <span>
-                          <div class="work-image"><img src="assets/images/macha/shop/18-PhotoRoom.png" alt="Portfolio Item"/></div>
+                          <div class="work-image"><img src="assets/images/macha/shop/9-PhotoRoom.png" alt="Portfolio Item"/></div>
                           <div class="work-caption font-alt">
-                            <h3 class="work-title">E-18</h3>
+                            <h3 class="work-title">E-9</h3>
                             <div class="work-descr">shop</div>
                           </div>
                         </span>
                         </li>
                       <li class="work-item shop">
                         <span>
-                          <div class="work-image"><img src="assets/images/macha/shop/27-PhotoRoom.png" alt="Portfolio Item"/></div>
+                          <div class="work-image"><img src="assets/images/macha/shop/10-PhotoRoom.png" alt="Portfolio Item"/></div>
                           <div class="work-caption font-alt">
-                            <h3 class="work-title">E-27</h3>
-                            <div class="work-descr">shop</div>
-                          </div>
-                        </span>
-                        </li>
-                      <li class="work-item shop">
-                        <span>
-                          <div class="work-image"><img src="assets/images/macha/shop/34-PhotoRoom.png" alt="Portfolio Item"/></div>
-                          <div class="work-caption font-alt">
-                            <h3 class="work-title">E-34</h3>
-                            <div class="work-descr">shop</div>
-                          </div>
-                        </span>
-                        </li>
-                      <li class="work-item shop">
-                        <span>
-                          <div class="work-image"><img src="assets/images/macha/shop/39-PhotoRoom.png" alt="Portfolio Item"/></div>
-                          <div class="work-caption font-alt">
-                            <h3 class="work-title">E-39</h3>
-                            <div class="work-descr">shop</div>
-                          </div>
-                        </span>
-                        </li>
-                      <li class="work-item shop">
-                        <span>
-                          <div class="work-image"><img src="assets/images/macha/shop/42-PhotoRoom.png" alt="Portfolio Item"/></div>
-                          <div class="work-caption font-alt">
-                            <h3 class="work-title">E-42</h3>
+                            <h3 class="work-title">E-10</h3>
                             <div class="work-descr">shop</div>
                           </div>
                         </span>
@@ -593,26 +598,29 @@
             </ul>
           </div>
         </section>
-        <section class="module-small bg-dark" id="contact">
+        <section class="module-small bg-dark" id="contact2">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3 text-center">
                 <h4 class="font-alt mb-20">Let's work together</h4>
-                <a href="tel:+123456789" id="contactBtn">
+                <a href="tel:+01062659628" id="contactBtn">
                   <div>상담문의</div>
                   <i class="fas fa-phone"></i>
                   <span>010 6265 9628</span>
                 </a>
               </div>
+              <div class="col-sm-6 col-sm-offset-3 text-center">
+                <div class="">
+                  <span>우리은행</span>
+                  <span>/ <span>1002 440 597310</span>  <i class="far fa-copy" id="copyIcon3" style="cursor:pointer;margin-left:5px;"></i></span><br>
+                  <span>예금주 : 고근옥</span>
+                  <span>/ <span> hdmacha@naver.com</span>  <i class="far fa-copy" id="copyIcon4" style="cursor:pointer;margin-left:5px;"></i></span>
+                  <textarea id="tempTextArea2" style="display: none;"></textarea>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- 모달 창 -->
-          <div id="contactModal" class="modal col-sm-6 text-center">
-            <div class="modal-content">
-                <span class="close" onclick="hideContactModal()">&times;</span>
-                <p>전화번호: <a href="tel:+01062659628">010-6265-9628</a></p>
-            </div>
-          </div>
+          
         </div>
         </section>
         <!-- <section class="module" id="news">
