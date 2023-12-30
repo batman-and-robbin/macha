@@ -8,7 +8,18 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         $('.loader').fadeOut();
         $('.page-loader').delay(350).fadeOut('slow');
     });
+function showImage(src) {
+    var overlay = document.querySelector('.overlay');
+    var expandedImage = document.getElementById('expandedImage');
+    
+    expandedImage.src = src;
+    overlay.style.display = 'flex';
+  }
 
+  function hideImage() {
+    var overlay = document.querySelector('.overlay');
+    overlay.style.display = 'none';
+  }
      // 계좌번호를 클릭하면 복사하는 함수
      function copyAccountNumber() {
         // 계좌번호를 가져옴
@@ -148,6 +159,9 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         // 클립보드 복사 후 텍스트 영역을 감추도록 변경
         document.getElementById("tempTextArea2").style.display = "none";
     });
+
+  
+
     $(document).ready(function() {
             // // CONTACT US 버튼 클릭 시 모달 표시
             // document.getElementById("contactBtn").addEventListener("click", function () {
