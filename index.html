@@ -65,13 +65,13 @@
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
 
-    <main>
+    <main style="padding:50px 0">
     
       <div id="copyMessage">복사되었습니다!</div>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+      <nav class="navbar navbar-custom navbar-fixed-top " role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
@@ -98,39 +98,32 @@
           </div>
         </div>
       </nav>
-      <section class="home-section bg-dark-60 portfolio-page-header parallax-bg" id="home" data-background="assets/images/macha/normal/8-PhotoRoom-min.png">
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-            <div class="font-alt mb-40 titan-title-size-4">현대마차</div><a class="section-scroll btn btn-border-w btn-round" href="#portfolio">Our Works</a>
-          </div>
-        </div>
+      <section class="home-section portfolio-page-header" id="home" data-background="assets/images/macha/1.png">
+        
       </section>
       <div class="main">
-        <section class="module-small bg-dark" id="contact">
+        <section class="module-small bg-dark" id="contact" style="padding:0px 0 !important;">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h4 class="font-alt mb-20">Let's work together</h4>
-                <a href="tel:01062659628" id="contactBtn">
-                  <div>상담문의</div>
+              <div class="col-sm-6 col-sm-offset-3 text-center ">
+                
+                <a href="tel:01062659628" id="contactBtn" style="position:relative; padding:5px 10px;margin:10px;">
+                  <span style="font-size:18px; font-weight:600;position:absolute;left:-80px;"  class="hide-on-mobile">상담문의</span>
                   <i class="fas fa-phone"></i>
                   <span>010 6265 9628</span>
                 </a>
               </div>
               <div class="col-sm-6 col-sm-offset-3 text-center">
-                <div class="">
+                <textarea id="tempTextArea" style="display: none;"></textarea>
+                <!-- <div class="">
                   <span>우리은행</span>
                   <span>/ <span id="accountNumber">1002 440 597310</span>  <i class="far fa-copy" id="copyIcon" style="cursor:pointer;margin-left:5px;"></i></span><br>
                   <span>예금주 : 고근옥</span>
                   <span>/ <span id="email"> hdmacha@naver.com</span>  <i class="far fa-copy" id="copyIcon2" style="cursor:pointer;margin-left:5px;"></i></span>
-                  <textarea id="tempTextArea" style="display: none;"></textarea>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-          
-        </div>
         </section>
         <section class="module" id="portfolio">
           <div class="container">
@@ -153,7 +146,7 @@
                   <div class="work-image"  onclick="showImage('assets/images/macha/normal/1-PhotoRoom-min.png')">
                     <span class="number-tag">A-1</span><img src="assets/images/macha/normal/1-PhotoRoom-min.png" alt="Portfolio Item"/>
                   </div>
-                  <div class="work-caption font-alt" onclick="showImage('assets/images/macha/normal/1-PhotoRoom-min.png')>
+                  <div class="work-caption font-alt" onclick="showImage('assets/images/macha/normal/1-PhotoRoom-min.png')">
                     <h3 class="work-title">A-1</h3>
                     <div class="work-descr">normal</div>
                   </div>

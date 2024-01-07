@@ -7,6 +7,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     $(window).on('load', function() {
         $('.loader').fadeOut();
         $('.page-loader').delay(350).fadeOut('slow');
+        
     });
 function showImage(src) {
     var overlay = document.querySelector('.overlay');
@@ -21,62 +22,62 @@ function showImage(src) {
     overlay.style.display = 'none';
   }
      // 계좌번호를 클릭하면 복사하는 함수
-     function copyAccountNumber() {
-        // 계좌번호를 가져옴
-        var accountNumber = document.getElementById("accountNumber").innerText;
+    //  function copyAccountNumber() {
+    //     // 계좌번호를 가져옴
+    //     var accountNumber = document.getElementById("accountNumber").innerText;
 
-        // 임시 텍스트area에 값을 설정하고 선택함
-        var tempTextArea = document.getElementById("tempTextArea");
-        tempTextArea.value = accountNumber;
-        tempTextArea.select();
+    //     // 임시 텍스트area에 값을 설정하고 선택함
+    //     var tempTextArea = document.getElementById("tempTextArea");
+    //     tempTextArea.value = accountNumber;
+    //     tempTextArea.select();
 
-        // 복사 명령 실행
-        document.execCommand('copy');
+    //     // 복사 명령 실행
+    //     document.execCommand('copy');
 
-        // 선택 해제
-        window.getSelection().removeAllRanges();
-        var scrollY = window.scrollY || window.pageYOffset;
-        // 복사되었습니다! 메시지를 표시하고 2초 후에 사라지도록 함
-        var copyMessage = document.getElementById("copyMessage");
-        copyMessage.style.top = `calc(50% + ${scrollY}px)`; 
-        copyMessage.style.opacity = "50%";
+    //     // 선택 해제
+    //     window.getSelection().removeAllRanges();
+    //     var scrollY = window.scrollY || window.pageYOffset;
+    //     // 복사되었습니다! 메시지를 표시하고 2초 후에 사라지도록 함
+    //     var copyMessage = document.getElementById("copyMessage");
+    //     copyMessage.style.top = `calc(50% + ${scrollY}px)`; 
+    //     copyMessage.style.opacity = "50%";
 
-        setTimeout(function() {
-            copyMessage.style.opacity = "0";
-        }, 2000);
-    }
+    //     setTimeout(function() {
+    //         copyMessage.style.opacity = "0";
+    //     }, 2000);
+    // }
 
     
-     // 계좌번호를 클릭하면 복사하는 함수
-     function copyEmail() {
-        // 계좌번호를 가져옴
-        var email = document.getElementById("email").innerText;
+    //  // 계좌번호를 클릭하면 복사하는 함수
+    //  function copyEmail() {
+    //     // 계좌번호를 가져옴
+    //     var email = document.getElementById("email").innerText;
 
-        // 임시 텍스트area에 값을 설정하고 선택함
-        var tempTextArea = document.getElementById("tempTextArea");
-        tempTextArea.value = email;
-        tempTextArea.select();
+    //     // 임시 텍스트area에 값을 설정하고 선택함
+    //     var tempTextArea = document.getElementById("tempTextArea");
+    //     tempTextArea.value = email;
+    //     tempTextArea.select();
 
-        // 복사 명령 실행
-        document.execCommand('copy');
+    //     // 복사 명령 실행
+    //     document.execCommand('copy');
 
-        // 선택 해제
-        window.getSelection().removeAllRanges();
-        var scrollY = window.scrollY || window.pageYOffset;
-        // 복사되었습니다! 메시지를 표시하고 2초 후에 사라지도록 함
-        var copyMessage = document.getElementById("copyMessage");
-        copyMessage.style.top = `calc(50% + ${scrollY}px)`; 
-        copyMessage.style.opacity = "50%";
+    //     // 선택 해제
+    //     window.getSelection().removeAllRanges();
+    //     var scrollY = window.scrollY || window.pageYOffset;
+    //     // 복사되었습니다! 메시지를 표시하고 2초 후에 사라지도록 함
+    //     var copyMessage = document.getElementById("copyMessage");
+    //     copyMessage.style.top = `calc(50% + ${scrollY}px)`; 
+    //     copyMessage.style.opacity = "50%";
 
-        setTimeout(function() {
-            copyMessage.style.opacity = "0";
-        }, 2000);
-    }
+    //     setTimeout(function() {
+    //         copyMessage.style.opacity = "0";
+    //     }, 2000);
+    // }
 
       // 계좌번호를 클릭하면 복사하는 함수
       function copyAccountNumber2() {
         // 계좌번호를 가져옴
-        var accountNumber = document.getElementById("accountNumber").innerText;
+        var accountNumber = document.getElementById("accountNumber2").innerText;
 
         // 임시 텍스트area에 값을 설정하고 선택함
         var tempTextArea = document.getElementById("tempTextArea2");
@@ -127,22 +128,22 @@ function showImage(src) {
     }
    
 
-    // 텍스트 영역을 클릭하면 텍스트 영역을 표시
-    document.getElementById("copyIcon").addEventListener("click", function() {
-        document.getElementById("tempTextArea").style.display = "block";
-        document.getElementById("tempTextArea").focus();
-        copyAccountNumber();
-        // 클립보드 복사 후 텍스트 영역을 감추도록 변경
-        document.getElementById("tempTextArea").style.display = "none";
-    });
-    // 텍스트 영역을 클릭하면 텍스트 영역을 표시
-    document.getElementById("copyIcon2").addEventListener("click", function() {
-        document.getElementById("tempTextArea").style.display = "block";
-        document.getElementById("tempTextArea").focus();
-        copyEmail();
-        // 클립보드 복사 후 텍스트 영역을 감추도록 변경
-        document.getElementById("tempTextArea").style.display = "none";
-    });
+    // // 텍스트 영역을 클릭하면 텍스트 영역을 표시
+    // document.getElementById("copyIcon").addEventListener("click", function() {
+    //     document.getElementById("tempTextArea").style.display = "block";
+    //     document.getElementById("tempTextArea").focus();
+    //     copyAccountNumber();
+    //     // 클립보드 복사 후 텍스트 영역을 감추도록 변경
+    //     document.getElementById("tempTextArea").style.display = "none";
+    // });
+    // // 텍스트 영역을 클릭하면 텍스트 영역을 표시
+    // document.getElementById("copyIcon2").addEventListener("click", function() {
+    //     document.getElementById("tempTextArea").style.display = "block";
+    //     document.getElementById("tempTextArea").focus();
+    //     copyEmail();
+    //     // 클립보드 복사 후 텍스트 영역을 감추도록 변경
+    //     document.getElementById("tempTextArea").style.display = "none";
+    // });
     // 텍스트 영역을 클릭하면 텍스트 영역을 표시
     document.getElementById("copyIcon3").addEventListener("click", function() {
         document.getElementById("tempTextArea2").style.display = "block";
@@ -163,6 +164,23 @@ function showImage(src) {
   
 
     $(document).ready(function() {
+
+        let currentImageIndex = 0;
+const images = [
+    'assets/images/macha/1.png',
+    'assets/images/macha/2.png',
+    'assets/images/macha/3.png',
+    'assets/images/macha/4.png',
+    'assets/images/macha/5.png',
+    'assets/images/macha/6.png',
+    // 여기에 추가 이미지 경로를 넣으세요.
+];
+const section = document.getElementById('home');
+
+setInterval(() => {
+    section.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+}, 3000); // 3000ms = 3초
             // // CONTACT US 버튼 클릭 시 모달 표시
             // document.getElementById("contactBtn").addEventListener("click", function () {
             //     document.getElementById("contactModal").style.display = "block";
@@ -257,7 +275,7 @@ function showImage(src) {
                 if (homeSection.hasClass('home-full-height')) {
                     homeSection.height($(window).height());
                 } else {
-                    homeSection.height($(window).height() * 0.85);
+                    homeSection.height($(window).height() * 0.55);
                 }
             }
         }
@@ -326,7 +344,7 @@ function showImage(src) {
                 if(topScroll >= navHeight) {
                     navbar.removeClass('navbar-transparent');
                 } else {
-                    navbar.addClass('navbar-transparent');
+                    // navbar.addClass('navbar-transparent');
                 }
             }
         }
