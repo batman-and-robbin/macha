@@ -3,20 +3,40 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */
+
+
+
+
 (function(){
     $(window).on('load', function() {
         $('.loader').fadeOut();
         $('.page-loader').delay(350).fadeOut('slow');
         
     });
+// 기존 함수를 수정
 function showImage(src) {
     var overlay = document.querySelector('.overlay');
     var expandedImage = document.getElementById('expandedImage');
     
     expandedImage.src = src;
     overlay.style.display = 'flex';
-  }
 
+    // 클릭한 이미지의 인덱스를 찾아 currentSlideIndex에 할당
+    currentSlideIndex = images.indexOf(src);
+}
+
+// 슬라이드를 이동하는 함수
+function moveSlide(n) {
+    currentSlideIndex += n;
+    
+    if (currentSlideIndex >= images.length) {
+        currentSlideIndex = 0;
+    } else if (currentSlideIndex < 0) {
+        currentSlideIndex = images.length - 1;
+    }
+
+    showImage(images[currentSlideIndex]);
+}
   function hideImage() {
     var overlay = document.querySelector('.overlay');
     overlay.style.display = 'none';

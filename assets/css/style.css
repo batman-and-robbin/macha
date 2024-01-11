@@ -9,7 +9,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font: 400 14px/1.8 "Open Sans", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
@@ -1246,7 +1246,7 @@ General Styles - Owlcarousel
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 11px;
+  font-size: 15px;
   transition: background, padding 0.4s ease-in-out 0s;
 }
 
@@ -1265,7 +1265,7 @@ General Styles - Owlcarousel
 .navbar-custom .navbar-brand {
   letter-spacing: 4px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 26px;
   color: #fff;
 }
 
@@ -3066,13 +3066,37 @@ Google map
     justify-content: center;
     z-index: 1000;
 }
-
+.image-container {
+  position: relative;
+  display: inline-block; 
+}
+.modal .number-tag {
+  position: absolute;
+  top: 0px;  
+  left: 0px; 
+  width:100%;
+  color: white;
+  font-size: 1.7rem;
+  background-color: #00000087;
+  text-align: center;
+}
+.modal-image {
+  width: 100%; /* 또는 실제 이미지 크기에 맞는 다른 값 */
+  height: auto;
+}
 .modal img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 90vh;
     animation: fadeIn 0.5s ease-in-out;
+    width:50vw;
+    object-fit: contain; /* 추가 */
 }
 
+@media screen and (max-width: 768px) {
+  .modal img {
+      width: 100vw;
+  }
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -3095,4 +3119,38 @@ Google map
   .hide-on-mobile {
       display: none;
   }
+}
+
+/* 이전 및 다음 버튼 스타일 */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* 이전 버튼 위치 */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* 다음 버튼 위치 */
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+a.wow.current{
+  background-color: #4a4a4a;
+  padding:5px 30px;
+  color:white;
 }
